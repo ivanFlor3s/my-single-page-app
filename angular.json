@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mi-spa"
+    }
+  },
+  "defaultProject": "mi-spa",
+  "cli": {
+    "analytics": false
+  }
 }
