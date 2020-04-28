@@ -9,6 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 
 // Routes
 import { AppRoutingModule } from './routes';
+import { AminesComponent } from './components/amines/amines.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './routes';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    AminesComponent
   ],
   imports: [
     BrowserModule,
