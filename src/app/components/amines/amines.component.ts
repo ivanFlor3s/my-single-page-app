@@ -17,5 +17,4 @@ export class AminesComponent implements OnInit {
     this.amines = this.amineService.getAmines();
     console.log(this.amines);
   }
-
 }
