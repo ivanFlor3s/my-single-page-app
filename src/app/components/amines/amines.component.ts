@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AminesService } from '../../services/amines.service';
 
 @Component({
   selector: 'app-amines',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AminesComponent implements OnInit {
 
-  constructor() { }
+  amines: any[] = [];
+
+  constructor( private amineService: AminesService) {
+   }
 
   ngOnInit(): void {
+    this.amines = this.amineService.getAmines();
+    console.log(this.amines);
   }
 
 }

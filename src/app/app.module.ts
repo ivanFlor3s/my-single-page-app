@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { AminesComponent } from './components/amines/amines.component';
 
 // Routes
 import { AppRoutingModule } from './routes';
-import { AminesComponent } from './components/amines/amines.component';
 
+
+// Servicios
+import { AminesService } from './services/amines.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,7 @@ import { AminesComponent } from './components/amines/amines.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AminesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
