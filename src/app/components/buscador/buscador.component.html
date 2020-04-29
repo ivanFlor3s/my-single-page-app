@@ -1,5 +1,14 @@
 <h1>Resultados de: <small> {{busqueda}}</small></h1>
 <hr>
+<div class="row" *ngIf="amineArray.length == 0">
+    <div class="col-md-8">
+        <div class="alert alert-primary" role="alert">
+            <p> No se encontraron resultados para el termino: <strong>{{busqueda}}</strong></p>
+        </div>
+    </div>
+
+</div>
+
 
 <div class="card-columns animated fadeIn fast">
     <div class="card" *ngFor="let amine of amineArray; let i = index">
