@@ -47,11 +47,14 @@ export class AminesService {
 
     buscarAmines(termino: string){
 
+      // tslint:disable-next-line: prefer-const
       let aminesArr: any[] = [];
       termino = termino.toLowerCase();
 
+      // tslint:disable-next-line:prefer-const
       for (let amine of this.amines){
 
+        // tslint:disable-next-line:prefer-const
         let nombre = amine.nombre.toLowerCase();
 
         if (nombre.indexOf(termino) >= 0){
