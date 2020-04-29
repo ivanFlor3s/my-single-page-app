@@ -1,15 +1,16 @@
 <h1>Amines this Season</h1>
 <hr>
 
-<div class="card-columns">
-    <div class="card" *ngFor="let amine of amines">
+<div class="card-columns animated fadeIn fast">
+    <div class="card" *ngFor="let amine of amines; let i = index">
         <img src="{{ amine.img }}" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{amine.nombre}}</h5>
             <p class="card-text">{{amine.bio}}</p>
             <p class="card-text badge badge-primary"><small>{{amine.genero}}</small></p>
             <p class="card-text"><small class="text-muted">{{amine.estreno}}</small></p>
-            <a class="btn btn-outline-primary btn-block">Mas info</a>
+            <!--<a [routerLink]="['/amine',i]" (click)="verAmine(i)" class="btn btn-outline-primary btn-block">Mas info</a> -->
+            <a (click)="verAmine(i)" class="btn btn-outline-primary btn-block">Mas info</a>
         </div>
     </div>
 </div>

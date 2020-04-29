@@ -14,6 +14,7 @@ import { AppRoutingModule } from './routes';
 
 // Servicios
 import { AminesService } from './services/amines.service';
+import { AmineComponent } from './components/amine/amine.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AminesService } from './services/amines.service';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    AminesComponent
+    AminesComponent,
+    AmineComponent
   ],
   imports: [
     BrowserModule,

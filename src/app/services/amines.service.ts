@@ -40,4 +40,8 @@ export class AminesService {
     getAmines(){
         return this.amines;
     }
+
+    getAmine(index: number){
+      return this.amines[index];
+    }
 }
