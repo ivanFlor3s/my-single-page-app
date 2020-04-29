@@ -44,4 +44,20 @@ export class AminesService {
     getAmine(index: number){
       return this.amines[index];
     }
-}
+
+    buscarAmines(termino: string){
+
+      let aminesArr: any[] = [];
+      termino = termino.toLowerCase();
+
+      for (let amine of this.amines){
+
+        let nombre = amine.nombre.toLowerCase();
+
+        if (nombre.indexOf(termino) >= 0){
+          aminesArr.push(amine);
+        }
+      }
+      return aminesArr;
+    }
+  }
