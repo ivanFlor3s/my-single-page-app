@@ -1,1 +1,14 @@
-<p>buscador works!</p>
+<h1>Resultados de: <small> {{busqueda}}</small></h1>
+<hr>
+
+<div class="card-columns animated fadeIn fast">
+    <div class="card" *ngFor="let amine of amineArray; let i = index">
+        <img src="{{ amine.img }}" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{amine.nombre}}</h5>
+            <p class="card-text">{{amine.bio}}</p>
+            <p class="card-text badge badge-primary"><small>{{amine.genero}}</small></p>
+            <p class="card-text"><small class="text-muted">{{amine.estreno}}</small></p>
+            <!--<a [routerLink]="['/amine',i]" (click)="verAmine(i)" class="btn btn-outline-primary btn-block">Mas info</a> --></div>
+    </div>
+</div>

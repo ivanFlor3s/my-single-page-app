@@ -8,14 +8,16 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./buscador.component.css']
 })
 export class BuscadorComponent implements OnInit {
-  animeArray: any[] = [];
+  busqueda: string;
+  amineArray: any[] = [];
   constructor(private amineService: AminesService, private activatedRoute: ActivatedRoute) {
    }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
-      this.animeArray = this.amineService.buscarAmines(params['term']);
-      console.log(this.animeArray);
+      this.amineArray = this.amineService.buscarAmines(params['term']);
+      console.log(this.amineArray);
+      this.busqueda = params['term'];
     });
   }
 
