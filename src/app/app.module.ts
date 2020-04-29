@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 // Componentes
 import { AppComponent } from './app.component';
@@ -29,7 +30,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [AminesService],
   bootstrap: [AppComponent]
