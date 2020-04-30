@@ -31,6 +31,20 @@ export class AminesService {
           estreno: '2020-05-01',
           genero: 'Slice of life'
         },
+        {
+          nombre: 'Boku No Hero',
+          bio: 'What would the world be like if 80 percent of the population manifested extraordinary superpowers called “Quirks” at age four? Heroes and villains would be battling it out everywhere! Becoming a hero would mean learning to use your power, but where would you go to study? U.A. High s Hero Program of course! But what would you do if you were one of the 20 percent who were born Quirkless?',
+          img: 'assets/imgs/hero.jpg',
+          estreno: '2020-02-12',
+          genero: 'Shonen'
+        },
+        {
+          nombre: 'Hunter x Hunter',
+          bio: 'After becoming 12, Gon leaves his home and takes on the task of entering the Hunter exam, notorious for its low success rate and high probability of death to become an official Hunter. He befriends the revenge-driven Kurapika, the doctor-to-be Leorio and the rebellious ex-assassin Killua in the exam, with their friendship prevailing throughout the many trials and threats they come upon taking on the dangerous career of a Hunter.',
+          img: 'assets/imgs/hxh.jpg',
+          estreno: '2020-02-12',
+          genero: 'Shonen'
+        }
       ];
 
     constructor() {
