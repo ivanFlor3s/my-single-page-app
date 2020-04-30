@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AminesService } from '../../services/amines.service';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-amine',
@@ -10,7 +11,7 @@ import { AminesService } from '../../services/amines.service';
 export class AmineComponent implements OnInit {
   amine: any = {};
 
-  constructor(private activeRoute: ActivatedRoute, private aminesService: AminesService) {
+  constructor(private activeRoute: ActivatedRoute, private aminesService: AminesService, private router: Router) {
     this.activeRoute.params.subscribe( params => {
       // tslint:disable-next-line:no-string-literal
       console.log(params['id']);
@@ -22,5 +23,7 @@ export class AmineComponent implements OnInit {
   ngOnInit( ): void {
     console.log(this.amine);
   }
-
+  volver(){
+    this.router.navigate(['/amines']);
+  }
 }

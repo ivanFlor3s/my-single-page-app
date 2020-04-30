@@ -16,7 +16,7 @@ export class AmineCardComponent implements OnInit {
   ngOnInit(): void {
   }
   verAmine(){
-    this.router.navigate(['/amine',this.index]);
+    this.router.navigate(['/amine', this.index]);
   }
 
 }
