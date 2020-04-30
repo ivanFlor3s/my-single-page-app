@@ -17,6 +17,7 @@ import { AppRoutingModule } from './routes';
 import { AminesService } from './services/amines.service';
 import { AmineComponent } from './components/amine/amine.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { AmineCardComponent } from './components/amine-card/amine-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     AboutComponent,
     AminesComponent,
     AmineComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    AmineCardComponent
   ],
   imports: [
     BrowserModule,
